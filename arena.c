@@ -37,7 +37,6 @@ Region regionCreate(size_t cap)
 void *regionWrite(Region *r, char *info)
 {
     size_t start = r->size;
-    char *c = info;
     size_t cum = len(info);
     size_t stop = r->size + cum + 1;
     size_t i;
